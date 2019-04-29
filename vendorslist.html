@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cashless</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo"><img src="img/logo.png" class="full" alt="Cashless"><img src="../img/logo_c.png" class="half" alt=""></div>
+            <div class="burger_profile">
+                <div class="burger" onclick="burger_on_off()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="bell_message_profile">
+                    <div><i class="far fa-bell"></i></i></div>
+                    <div><i class="far fa-envelope"></i></div>
+                    <div class="profile_card">
+                        <div><i class="far fa-user"></i></div>
+                        <div>Rayqube</div>
+                        <div class="down"><i class="fas fa-chevron-down"></i></div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="sub_container">
+            <div class="sidebar">
+                <div class="menu">
+                    <a href="dashboard.html" onclick="highlight(1)" class="sidemenutext">
+                        <div class="white_selection active"></div>
+                        <div class="hflex widthforsb"><i class="fas fa-tachometer-alt"></i><div class="sidebar_text">Dashboard</div></div>
+                    </a>
+                    <div onclick="return show(1); highlight(2);" class="sidemenutext active">
+                        <div class="white_selection"></div>
+                        <div class="hflex widthforsb"><i class="fas fa-hands-helping"></i> <div class="sidebar_text">&nbsp;Vendors</div>  <div class="arrows"><i class="fas fa-chevron-right rotate"></i></i></div></div>
+                    </div>
+                    <div class="submenu vendor_submenu">
+                        <a href="vendorslisttable.html" class="active">View Vendor</a>
+                        <a href="vendorslist.html" style="color:white;" class="active">Add Vendor</a>
+                    </div> 
+                    <div onclick="return show(2); highlight(3);" class="sidemenutext">
+                        <div class="white_selection"></div>
+                        <div class="hflex widthforsb"><i class="fas fa-user-alt"></i> <div class="sidebar_text">&nbsp;Users</div>  <div class="arrows"><i class="fas fa-chevron-right rotate"></i></div></div>
+                    </div>
+                    <div class="submenu user_submenu">
+                        <a href="userstable.html" class="active">View User</a>
+                        <a class="active">Add User</a>
+                    </div>
+                    <div onclick="return show(3); highlight(4);" class="sidemenutext">
+                        <div class="white_selection"></div>
+                        <div class="hflex widthforsb"><i class="fas fa-clipboard-list"></i> <div class="sidebar_text">&nbsp;Event Categories</div>  <div class="arrows"><i class="fas fa-chevron-right rotate"></i></div></div>
+                    </div>
+                    <div class="submenu ecat_submenu">
+                        <a href="eventcategoriestable.html" class="active">View Category</a>
+                        <a href="eventcategories.html" class="active">Add Category</a>
+                    </div>
+                    <div onclick="return show(4); highlight(5);" class="sidemenutext">
+                        <div class="white_selection"></div>
+                        <div class="hflex widthforsb"><i class="far fa-calendar-alt"></i> <div class="sidebar_text">&nbsp;Events</div>  <div class="arrows"><i class="fas fa-chevron-right rotate"></i></div></div>
+                    </div>
+                    <div class="submenu e_submenu">
+                        <a href="eventstable.html" class="active">View Event</a>
+                        <a href="addevent.html" class="active">Add Event</a>
+                    </div>
+                    <div onclick="return show(5); highlight(6);" class="sidemenutext">
+                        <div class="white_selection"></div>
+                        <div class="hflex widthforsb"><i class="fas fa-people-carry"></i> <div class="sidebar_text">&nbsp;Suppliers</div>  <div class="arrows"><i class="fas fa-chevron-right rotate"></i></div></div>
+                    </div>
+                    <div class="submenu sup_submenu">
+                        <a href="supplierstable.html" class="active">View Supplier</a>
+                        <a href="addsupplier.html" class="active">Add Supplier</a>
+                    </div>
+                    <div onclick="return show(6); highlight(7);" class="sidemenutext">
+                        <div class="white_selection"></div>
+                        <div class="hflex widthforsb"><i class="fas fa-boxes"></i> <div class="sidebar_text">&nbsp;Event Inventory</div>  <div class="arrows"><i class="fas fa-chevron-right rotate"></i></div></div>
+                    </div>
+                    <div class="submenu einvent_submenu">
+                        <a href="Eventinventorytable.html" class="active">View Inventories</a>
+                        <a href="addinventory.html" class="active">Add Inverntory</a>
+                    </div>
+                    <a href="transactiontable.html" onclick="highlight(8)" class="sidemenutext">
+                        <div class="white_selection"></div>
+                        <div class="hflex widthforsb"><i class="fas fa-exchange-alt"></i> <div class="sidebar_text">Transactions</div></div>
+                    </a>
+                </div>
+            </div>
+            <div class="sidebar1">
+                <div class="menu">
+                    <a href="dashboard.html" onclick="highlight(1)" class="sidemenutext">
+                        <div class="white_selection active"></div>
+                        <div class="hflex widthforsb"><i class="fas fa-tachometer-alt"></i></div>
+                    </a>
+                    <a href="vendorslisttable.html" onclick="return show(1); highlight(2);" class="sidemenutext active">
+                        <div class="white_selection"></div>
+                        <div class="hflex widthforsb"><i class="fas fa-hands-helping"></i></div>
+                    </a>
+                    <div class="submenu vendor_submenu">
+                        <a class="active">View Vendor</a>
+                        <a class="active">Add Vendor</a>
+                    </div> 
+                    <a href="userstable.html" onclick="return show(2); highlight(3);" class="sidemenutext">
+                        <div class="white_selection"></div>
+                        <div class="hflex widthforsb"><i class="fas fa-user-alt"></i></div>
+                    </a>
+                    <div class="submenu user_submenu">
+                        <a class="active">View User</a>
+                        <a class="active">Add User</a>
+                    </div>
+                    <a href="eventcategoriestable.html" onclick="return show(3); highlight(4);" class="sidemenutext">
+                        <div class="white_selection"></div>
+                        <div class="hflex widthforsb"><i class="fas fa-clipboard-list"></i></div>
+                    </a>
+                    <div class="submenu ecat_submenu">
+                        <a class="active">View Category</a>
+                        <a class="active">Add Category</a>
+                    </div>
+                    <a href="eventstable.html" onclick="return show(4); highlight(5);" class="sidemenutext">
+                        <div class="white_selection"></div>
+                        <div class="hflex widthforsb"><i class="far fa-calendar-alt"></i></div>
+                    </a>
+                    <div class="submenu e_submenu">
+                        <a class="active">View Event</a>
+                        <a class="active">Add Event</a>
+                    </div>
+                    <a href="supplierstable.html" onclick="return show(5); highlight(6);" class="sidemenutext">
+                        <div class="white_selection"></div>
+                        <div class="hflex widthforsb"><i class="fas fa-people-carry"></i></div>
+                    </a>
+                    <div class="submenu sup_submenu">
+                        <a class="active">View Supplier</a>
+                        <a class="active">Add Supplier</a>
+                    </div>
+                    <a href="eventinventorytable.html" onclick="return show(6); highlight(7);" class="sidemenutext">
+                        <div class="white_selection"></div>
+                        <div class="hflex widthforsb"><i class="fas fa-boxes"></i></div>
+                    </a>
+                    <div class="submenu einvent_submenu">
+                        <a class="active">View Inventories</a>
+                        <a class="active">Add Inverntory</a>
+                    </div>
+                    <a href="transactiontable.html" onclick="highlight(8)" class="sidemenutext">
+                        <div class="white_selection"></div>
+                        <div class="hflex widthforsb"><i class="fas fa-exchange-alt"></i></div>
+                    </a>
+                </div>
+            </div>
+            <div class="changecontainer">
+                <div class="heading_breadcrumb">
+                    <div>Vendors</div>
+                    <div class="breadcrum"><i class="fas fa-tachometer-alt"></i> <i class="fas fa-chevron-right rotate"></i> <span class="breadcrum_text">Vendors</span> <i class="fas fa-chevron-right rotate"></i> <span class="breadcrum_text">Add Vendors</span></div>
+                </div>
+                <div class="main_data">
+                    
+                    <div class="switch_tabs">
+                        <div class="s_tab one" onclick="firstform()">Basic Info</div>
+                        <div class="s_tab two" onclick="secondform()">Company Info</div>
+                        <div class="s_tab three" onclick="thirdform()">Bank Details</div>
+                    </div>
+                    <form action="">
+                    <div class="fields_imageupload firstform">
+                        <div class="doing_flex">
+                                <div class="fields">
+                                        <div class="inputfield"><input type="text" placeholder="First Name"></div>
+                                        <div class="inputfield"><input type="text" placeholder="Last Name"></div>
+                                        <div class="inputfield"><input type="email" placeholder="Email"></div>
+                                        <div class="inputfield"><input type="text" placeholder="Contact No."></div>
+                                        <div class="inputfield"><input type="password" placeholder="Password"></div>
+                                    </div>
+                                    <div class="image_upload">
+                                        <div class="profimg_browseimage">
+                                            <div>Profile Image</div>
+                                            <div class="browse_buttons"><input  id="vendorimage" onchange="readURL(this)" type="file"><div>Browse</div></div>
+                                        </div>
+                                        <div class="image_holder"><img src="" id="vendorimageholder" alt=""></div>
+                                        <div class="path" id="path_vendor"></div>
+                                    </div> 
+                        </div>
+                        
+                    
+                        <div class="button_container">
+                            <div class="buttons_lg" onclick="secondform()">Next</div>
+                        </div>
+                    </div>
+                    <div class="fields_imageupload secondform">
+                            <div class="fields1">
+                                <div class="inputfield"><input type="text" placeholder="Organization Name"></div>
+                                <div class="inputfield"><input type="text" placeholder="Category"></div>
+                                <div class="inputfield"><input type="text" placeholder="Website"></div>
+                                <div class="inputfield"><input type="text" placeholder="Contact No."></div>
+                                <div class="inputfield"><input type="text" placeholder="Address"></div>
+                            </div>
+                        
+                            <div class="button_container">
+                                <div class="buttons_lg" onclick="thirdform()">Next</div>
+                            </div>
+                    </div>
+                    <div class="fields_imageupload thirdform">
+                            <div class="fields2">
+                                <div class="inputfield"><input type="text" placeholder="Bank Name"></div>
+                                <div class="inputfield"><input type="text" placeholder="Account No."></div>
+                                <div class="inputfield"><input type="text" placeholder="Account Holder Name"></div>
+                                <div class="inputfield"><input type="text" placeholder="IFSC Code"></div>
+                                <div class="inputfield"><input type="text" placeholder="Contact No.(Linked with given account)"></div>
+                                <div class="inputfield"><input type="text" placeholder="Branch Address"></div>
+                            </div>
+                        
+                            <div class="button_container">
+                                <div class="buttons_lg">Submit</div>
+                            </div>
+                    </div>
+                </form>
+                </div>
+                <div class="copy">©RAYQUBE Future Tech 2019. </div>
+            </div>
+            <div class="profile">
+                <div class="pro_img_namedesig">
+                    <div class="pro_img"><i class="fas fa-user-alt"></i></div>
+                    <div class="namedesig">
+                        <div>
+                            <div class="proname">Rayqube</div>
+                            <div class="proemail">Rayqube@rayqube.com</div>
+                        </div>
+                        
+                        <div class="probutton">View Profile</div>
+                    </div>
+                </div>
+                <div class="bal_edit_pass">
+                    <div><i class="fas fa-wallet"></i>My Balance</div>
+                    <div><i class="fas fa-pencil-alt"></i>Edit Profile</div>
+                    <div><i class="fa fa-lock"></i>Change Password</div>
+                </div>
+                <div class="logout_button"><i class="fas fa-power-off"></i>Logout</div>
+            </div>
+        </div>
+    </div>
+    <script src="../js/scripts.js"></script>
+</body>
+</html>

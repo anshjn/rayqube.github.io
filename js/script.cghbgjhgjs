@@ -1,0 +1,20 @@
+// ********************************Sidebar************************************
+function show(e){ 
+    highlight(e+1);
+    var submenu = document.querySelectorAll(".submenu");
+    $(".submenu").css("display","none");
+    submenu[e-1].style.display="flex";
+    submenu[e-1].style.height="50px";
+}
+function highlight(e){
+    var wbar = document.querySelectorAll(".white_selection");
+    var hlight = document.querySelectorAll(".sidemenutext");
+    var rotator = document.querySelectorAll(".rotate");
+    $(".sidemenutext").removeClass("active");
+    $(".white_selection").removeClass("active");
+    hlight[e-1].classList.add("active");
+    wbar[e-1].classList.add("active");
+    $(".rotate").css("transform","rotate(0deg)");
+    rotator[e-2].style.transform="rotate(-270deg)";
+}
+// *******************************togglebutton**********************************
