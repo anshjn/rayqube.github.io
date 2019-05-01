@@ -1,0 +1,154 @@
+<html>
+<head>
+<title>Table</title>
+
+<style>
+
+
+@font-face {
+  font-family: ftr;
+  src: url(fonts/FrutigerLTStd-Light.woff.ttf);
+}
+@font-face {
+  font-family: ml;
+  src: url(fonts/ManifaV2-Light.ttf);
+}
+@font-face {
+  font-family: mr;
+  src: url(fonts/ManifaV2-Regular.ttf);
+}
+@font-face {
+  font-family: mt;
+  src: url(fonts/ManifaV2-Thin.ttf);
+}
+
+table {
+  font-family: arial, sans-serif;
+  border: none;
+  width:70%;
+  margin-left:15%;
+}
+td,th{
+  height: 20px;
+  line-height: 2;
+  border: none;
+  width: 15%;
+  border-bottom: 1px solid #C0C0C0;
+}
+
+td{
+  font-family: ml;
+  text-align: center;
+}
+
+th {
+background-color: #E6E7E8;
+color:#00843D;
+line-height: 1;
+font-family: mt;
+}
+
+.first_data{
+  background-color: #F0B323;
+  color: white;
+  text-align: right;
+  padding: 9px;
+}
+#right_align{
+  text-align: right;
+      padding: 0px;
+  width: 30px;
+  border-right: 1px solid black;
+  border-bottom: none;
+}
+.second_data{
+  padding-right: 11px;
+}
+.green{
+  color: #F0B323;
+}
+</style>
+<body>
+<table border = 2>
+  <tr>
+   
+	 <th colspan=2  class="main-head" style="height: 25px"><span style="color:#79797C; font-size:35px; font-family:mt">aramco</span><span style="font-family: mr; font-size: 25px; color: #F0B323;">ULTRA</span></th>
+    <th width="15%" style="font-size: 20px; color: #F0B323;"">4</th>
+	<th width="15%" style="font-size: 20px; color: #F0B323;"">4</th>
+  </tr>
+  <tr>
+    <th colspan="2" class="main-head" style="background:white; color: #F0B323;"">API Base Oil Category</th>
+	<th width="20%" style="background:white; font-family: mr; color: #F0B323;"" >Group III</th>
+	<th width="20%" style="background:white; font-family: mr; color: #F0B323;"">Group III</th>
+  </tr>
+  <tr>
+  
+  </tr>
+  <tr>
+       <td id = "right_align"><span class = "second_data green" style="font-family: mr; color: #676A6E">Properties</span><br><span class = "first_data">Appearance</span></td>
+    <td><span style="font-family: mr;">Method</span><br><span class="inner_head">Visual</span></td> 
+    <td><span style="font-family: mr;">Typical</span><br><span class="inner_head">C & B</span></td>
+	<td><span style="font-family: mr;">Typical</span><br><span class="inner_head">C & B</span></td>
+  </tr>
+  <tr>
+    <td id = "right_align">
+    <span class = "second_data">Kinemetic Viscosity@40&#8451;,cSt</span>
+    <br>
+    <span class = "first_data">Kinemetic Viscosity@100&#8451;,cSt</span>
+  </td>
+
+    <td><span class="inner_head">D 445</span><br><span class="inner_head">D 445</span></td>
+    <td><span class="inner_head">19.7</span><br><span class="inner_head">4.27</span></td>
+	<td><span class="inner_head">20.4</span><br><span class="inner_head">4.40</span></td>
+  </tr>
+  <tr>
+  <td id = "right_align"><span class = "second_data">Viscosity Index</span><br><span class = "first_data">Saturates, wt%</span></td> 
+    <td><span class="inner_head">D 2270</span><br><span class="inner_head">D 2007</span></td> 
+    <td><span class="inner_head">124</span><br><span class="inner_head">99</span></td>
+	<td><span class="inner_head">126</span><br><span class="inner_head"></span></td>
+  </tr>
+  <tr>
+    <td id = "right_align"><span class = "second_data">Sulfur, wt ppm</span><br><span class = "first_data">Noack Volatility, wt%(Procedure B)</span></td>
+    <td><span class="inner_head">D 5453</span><br><span class="inner_head">D 5800</span></td> 
+    <td><span class="inner_head">1</span><br><span class="inner_head">14.7</span></td>
+	<td><span class="inner_head">&lt;10</span><br><span class="inner_head">14.4</span></td>
+  </tr>
+  <tr>
+    <td id = "right_align"><span class = "second_data">CCS ViscoSity @ -30&#8451;, mPa-s</span><br><span class = "first_data">Pour Point,&#8451;</span></td>
+    <td><span class="inner_head">D 5293</span><br><span class="inner_head">D 5950</span></td> 
+    <td><span class="inner_head">1.500</span><br><span class="inner_head">-20</span></td>
+	<td><span class="inner_head">1.500</span><br><span class="inner_head">-20</span></td>
+	
+  </tr>
+  <tr>
+    <td id = "right_align"><span class = "second_data">Density@15&#8451;,Kg/L</span><br><span class = "first_data">Saybolt Color</span></td>
+    <td><span class="inner_head">D 4052</span><br><span class="inner_head">D 156</span></td> 
+    <td><span class="inner_head">0.8350</span><br><span class="inner_head">+30</span></td>
+	<td><span class="inner_head">0.8360</span><br><span class="inner_head"></span></td>
+  </tr>
+  <tr>
+    <td id = "right_align"><span class = "second_data">Color ASTM</span><br><span class = "first_data">Flash Point COC,&#8451;</span></td>
+    <td><span class="inner_head">D 1500</span><br><span class="inner_head">D 92</span></td> 
+    <td><span class="inner_head">L 0.5</span><br><span class="inner_head">220</span></td>
+	<td><span class="inner_head">L 0.5</span><br><span class="inner_head">220</span></td>
+  </tr>
+  <tr>
+    <td id = "right_align"><span class = "second_data">Copper Corroision 100&#8451; 3hrs</span><br><span class = "first_data">Total Acid Number, mgKOH/g</span></td>
+    <td><span class="inner_head">D 130</span><br><span class="inner_head">D 974</span></td> 
+    <td><span class="inner_head">1b</span><br><span class="inner_head">L 0.01</span></td>
+	<td><span class="inner_head"></span><br><span class="inner_head"></span></td>
+  </tr>
+  <tr>
+    <td id = "right_align"><span class = "second_data">Aromatic, wt%</span><br><span class = "second_data">Manufacturing Site</span></td>
+    <td><span class="inner_head">D 2007</span><br><span class="inner_head"></span></td> 
+    <td><span class="inner_head">&lt;1</span><br><span class="inner_head">Ulsan</span></td>
+	<td><span class="inner_head">&lt;1</span><br><span class="inner_head">Port Arthur</span></td>
+  </tr>
+  <tr>
+    <td colspan="6">Notes: *-D97 | ‡ - D 2622</td>
+  </tr>
+</table>
+</body>
+</head>
+</html>
+ 

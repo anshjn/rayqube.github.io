@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Aramco</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+    <div class="three_page_container ">
+        <div class="header">
+            <div class="title">Introducing Aramco Base Oils</div>
+            <div class="burger" onclick="opened()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <div class="text about_us_img">
+            <div class="text1">For over 80 years, Saudi Aramco has been a reliable, trusted supplier of oil and gas to our customers across the world.
+                </div>
+            <div class="text2">Through a series of joint ventures, we have been a major supplier of premium quality base oils around the world for over 40 years. Under the trusted company names of Luberef, Motiva, and S-OIL, we have collaborated with our customers to navigate market change, while delivering to them base oil solutions that meet their needs.
+                </div>
+        </div>
+        <div class="functionality">
+            <div class="tabs_about">
+                <div class="tab" onclick="aboutselection(1)"><img src="imgs/luberefcolor.png" alt=""></div>
+                <div class="tab" onclick="aboutselection(2)"><img src="imgs/motiva1.png" alt=""></div>
+                <div class="tab" onclick="aboutselection(3)"><img src="imgs/S-oil-02.png" alt=""></div>
+            </div>
+            <div class="content_container">
+                <div class="tabs_detail luberef_detail">
+                    <div class="sub_contain_luberef">
+                        <div class="tabs_detail_img"><img src="imgs/luberefcolor.png" alt=""></div>
+                        <div><span class = "word_luberef">Luberef</span> &nbsp; supplies base oils customers operating across the Middle East, East Africa, India and Pakistan. The strategically advantageous location of Luberef’s refineries in Jeddah and Yanbu’, in the Kingdom of Saudi Arabia, is combined with a consistent and reliable high quality supply of base oil, and an</div>
+                        <div>optimized grade mix provide supply chain efficiencies to Luberef customers. Luberef’s total capacity is 24,300 barrels per day (1.2 million tons per year).</div>
+                    </div>
+                </div>
+                <div class="tabs_detail motiva_detail">
+                    <div class="sub_contain_motiva">
+                        <div class="tabs_detail_img"><img src="imgs/motiva1.png" alt=""></div>
+                        <div><span class = "word_motiva">Motiva</span> &nbsp;base Oils are recognized for their quality and are key components in a broad spectrum
+                            of lubricants – including automotive, industrial, and functional fluid applications. Motiva’s Port
+                            Arthur Refinery is the site of the largest base oil plant in North America, operating three lube
+                            hydroprocessing units that use Motiva- patented unit designs, to
+                        </div>
+                        <div>designs, to upgrade heavy gas oils into
+                            high quality premium base oils. With a world-class sales and supply logistics team, Motiva will
+                            consistently fulfill your Group II and Group III needs in the Americas and around the world.
+                            Motiva’s total capacity is 40,300 barrels per day (2.0 million tons per year).
+                        </div>
+                    </div>
+                </div>
+                <div class="tabs_detail soil_detail">
+                    <div class="sub_contain_soil">
+                        <div class="tabs_detail_img"><img src="imgs/S-oil-02.png" alt=""></div>
+                        <div><span class = "word_soil">S-Oil</span> &nbsp;is one of the world’s top base oil producers, leading in South Korea since S-OIL’s
+                            foundation in 1976 as the first local lube base oil refinery located in Ulsan. S-OIL’s global
+                            presence has been successfully expanded into</div>
+                        <div>not only Asia, but also Europe and North America, by utilizing its full range of product portfolio from Group I to Group III, with a
+                                daily production capacity of 44,700 barrels per day (2.2 million tons per year).</div>
+                    </div>
+                </div>
+ 
+
+
+                <!-- <div class="m_tabs_detail m_luberef">
+                    <div><img src="imgs/luberefcolor.png" alt=""></div>
+                    <div> <span>Luberef</span>  supplies base oils customers operating across the Middle East, East Africa, India and Pakistan. The strategically advantageous location of Luberef’s reﬁneries in Jeddah and Yanbu’, in the Kingdom of Saudi Arabia, is combined with a consistent and reliable high quality supply of base oil, and anoptimized grade mix provide supply chain efﬁciencies to Luberef customers. Luberef’s total capacity is 24,300 barrels per day (1.2 million tons per year).</div>
+                </div>
+                <div class="m_tabs_detail m_motiva">
+                    <div><img src="" alt=""></div>
+                    <div> <span>Motiva</span>   base Oils are recognized for their quality and are key components in a broad spectrum of lubricants – including automotive, industrial, and functional fluid applications. Motiva’s Port Arthur Refinery is the site of the largest base oil plant in North America, operating three lube hydroprocessing units that use Motiva- patented unit designs, todesigns, to upgrade heavy gas oils into high quality premium base oils. With a world-class sales and supply logistics team, Motiva will consistently fulfill your Group II and Group III needs in the Americas and around the world. Motiva’s total capacity is 40,300 barrels per day (2.0 million tons per year).</div>
+                </div>
+                <div class="m_tabs_detail m_soil">
+                    <div><img src="" alt=""></div>
+                    <div> <span>S-Oil</span>   is one of the world’s top base oil producers, leading in South Korea since S-OIL’s foundation in 1976 as the first local lube base oil refinery located in Ulsan. S-OIL’s global presence has been successfully expanded into not only Asia, but also Europe and North America, by utilizing its full range of product portfolio from Group I to Group III, with a daily production capacity of 44,700 barrels per day (2.2 million tons per year).</div>
+                </div> -->
+            </div>
+        </div>
+    </div>
+    <div class="burger_menu">
+        <div class="menu_container">
+            <div class="closing" onclick="closed();">&times;</div>
+            <div class="menu_logo"><img src="imgs/logo.png" alt=""></div>
+            <div class="section" style = "color: black;">HOME</div>
+            <div class="section" style = "color: #0054A1;">ABOUT US</div>
+            <div class="section" style = "color: #00A34F;">PRODUCTS</div>
+            <div class="section" style = "color: #F08934;">API / ACEA</div>
+            <div class="section" style = "color: #662D8D;">VICE PRESIDENT</div>
+            <div class="section" style = "color: #1B9A96;">CONTACT US</div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
